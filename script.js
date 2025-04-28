@@ -58,3 +58,9 @@ function convertTemperature(value) {
     let celsius = (value - 32) * 5/9;
     return `${value}°C = ${fahrenheit.toFixed(2)}°F | ${value}°F = ${celsius.toFixed(2)}°C`;
 }
+
+// Handling scientific functions
+function appendScientific(func) {
+    // Append function name and open parenthesis
+    document.getElementById('display').value += func + '(';
+}
